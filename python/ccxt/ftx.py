@@ -977,7 +977,7 @@ class ftx(Exchange):
             'size': float(self.amount_to_precision(symbol, amount)),
             # 'reduceOnly': False,  # optional, default is False
             # 'ioc': False,  # optional, default is False, limit or market orders only
-            # 'postOnly': False,  # optional, default is False, limit or market orders only
+            'postOnly': False,  # optional, default is False, limit or market orders only
             # 'clientId': 'abcdef0123456789',  # string, optional, client order id, limit or market orders only
         }
         clientOrderId = self.safe_string_2(params, 'clientId', 'clientOrderId')
